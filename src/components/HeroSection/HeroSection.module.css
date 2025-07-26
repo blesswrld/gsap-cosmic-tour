@@ -1,0 +1,47 @@
+.heroSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.heroSection h1 {
+    font-family: var(--primary-font);
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px white;
+    z-index: 1;
+}
+
+.heroSection p {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-family: var(--primary-font);
+    z-index: 1;
+}
+
+.scrollArrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    text-shadow: 0 0 15px var(--glow-color);
+    cursor: default;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .heroSection h1 {
+        font-size: 3rem;
+    }
+    .heroSection p {
+        font-size: 1.2rem;
+    }
+}

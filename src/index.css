@@ -1,0 +1,23 @@
+:root {
+    --primary-font: "Orbitron", sans-serif;
+    --text-color: #e0e0e0;
+    --accent-color: #33a3ff;
+    --glow-color: rgba(51, 163, 255, 0.7);
+    --background-color: #00021a;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#root {
+    width: 100%;
+}

@@ -1,0 +1,25 @@
+.planetViewport {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.planetImage {
+    width: 256px;
+    height: 256px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 35px var(--glow-color));
+}
+
+@media (max-width: 768px) {
+    .planetImage {
+        width: 180px;
+        height: 180px;
+    }
+}
